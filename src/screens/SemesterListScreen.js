@@ -19,7 +19,12 @@ const SemesterListScreen = (props) =>{
 
                 renderItem = {function({item}) {
                     return(
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                            onPress = {function(){
+                                props.navigation.navigate("Course",{
+                                    semester: item.name,
+                                });
+                            }} >
                             <Text style = {styles.textStyle} >
                                 {item.name}
                             </Text>
