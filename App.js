@@ -5,6 +5,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import SemesterListScreen from "./src/screens/SemesterListScreen";
 import CourseListScreen from "./src/screens/CourseListScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
+import FacultyListScreen from "./src/screens/FacultyListScreen";
 
 const stack = createStackNavigator();
 
@@ -16,7 +17,7 @@ export default function App() {
         <stack.Screen name = "Semester" component = {SemesterListScreen}/>
         <stack.Screen name = "Course" component = {CourseListScreen}/>
         <stack.Screen name = "Profile" component = {ProfileScreen}/>
-
+        <stack.Screen name = "Faculty List" component = {FacultyListScreen}/>
       </stack.Navigator>
     </NavigationContainer>
   )
